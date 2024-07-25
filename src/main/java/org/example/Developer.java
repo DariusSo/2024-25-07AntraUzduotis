@@ -5,8 +5,14 @@ public class Developer extends Employee{
     double salary;
     String programmingLanguage;
 
+    public Developer(String name, double salary, String programmingLanguage) {
+        super(name, salary);
+        this.programmingLanguage = programmingLanguage;
+    }
+
+
     @Override
     public String getDetails(){
-        return "Vardas: " + this.name + " Alga: " + salary + " Programming language: " + programmingLanguage;
+        return "Vardas: " + super.name + " Alga: " + super.salary + " Programming language: " + programmingLanguage;
     };
 }

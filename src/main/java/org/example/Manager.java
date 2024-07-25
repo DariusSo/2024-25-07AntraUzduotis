@@ -5,8 +5,15 @@ public class Manager extends Employee{
     double salary;
     String department;
 
+    public Manager(String name, double salary, String department) {
+        super(name, salary);
+        this.department = department;
+    }
+
+
     @Override
     public String getDetails(){
-        return "Vardas: " + this.name + " Alga: " + salary + " Departamentas: " + department;
+        return "Vardas: " + super.name + " Alga: " + super.salary + " Departamentas: " + department;
     };
+
 }

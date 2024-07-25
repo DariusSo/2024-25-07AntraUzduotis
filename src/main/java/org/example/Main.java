@@ -3,10 +3,8 @@ package org.example;
 public class Main {
     public static void main(String[] args) {
 
-        Developer developer = new Developer();
-        developer.name = "Darius";
-        developer.salary = 2500.00;
-        developer.programmingLanguage = "Java";
+        Employee developer = new Developer("Darius", 2500.00, "Java");
+
         System.out.println(developer.getDetails());
     }
 }
